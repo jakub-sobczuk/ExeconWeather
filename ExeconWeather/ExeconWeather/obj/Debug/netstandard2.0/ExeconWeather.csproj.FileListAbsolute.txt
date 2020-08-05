@@ -1,0 +1,17 @@
+C:\Users\jsobczuk\Desktop\excon2\ExeconWeather\ExeconWeather\ExeconWeather\bin\Debug\netstandard2.0\ExeconWeather.deps.json
+C:\Users\jsobczuk\Desktop\excon2\ExeconWeather\ExeconWeather\ExeconWeather\bin\Debug\netstandard2.0\ExeconWeather.dll
+C:\Users\jsobczuk\Desktop\excon2\ExeconWeather\ExeconWeather\ExeconWeather\bin\Debug\netstandard2.0\ref\ExeconWeather.dll
+C:\Users\jsobczuk\Desktop\excon2\ExeconWeather\ExeconWeather\ExeconWeather\bin\Debug\netstandard2.0\ExeconWeather.pdb
+C:\Users\jsobczuk\Desktop\excon2\ExeconWeather\ExeconWeather\ExeconWeather\obj\Debug\netstandard2.0\ExeconWeather.csprojAssemblyReference.cache
+C:\Users\jsobczuk\Desktop\excon2\ExeconWeather\ExeconWeather\ExeconWeather\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\jsobczuk\Desktop\excon2\ExeconWeather\ExeconWeather\ExeconWeather\obj\Debug\netstandard2.0\CustomControls\WeatherView.xaml.g.cs
+C:\Users\jsobczuk\Desktop\excon2\ExeconWeather\ExeconWeather\ExeconWeather\obj\Debug\netstandard2.0\Views\CityPage.xaml.g.cs
+C:\Users\jsobczuk\Desktop\excon2\ExeconWeather\ExeconWeather\ExeconWeather\obj\Debug\netstandard2.0\Views\LocationPage.xaml.g.cs
+C:\Users\jsobczuk\Desktop\excon2\ExeconWeather\ExeconWeather\ExeconWeather\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\jsobczuk\Desktop\excon2\ExeconWeather\ExeconWeather\ExeconWeather\obj\Debug\netstandard2.0\ExeconWeather.AssemblyInfoInputs.cache
+C:\Users\jsobczuk\Desktop\excon2\ExeconWeather\ExeconWeather\ExeconWeather\obj\Debug\netstandard2.0\ExeconWeather.AssemblyInfo.cs
+C:\Users\jsobczuk\Desktop\excon2\ExeconWeather\ExeconWeather\ExeconWeather\obj\Debug\netstandard2.0\ExeconWeather.dll
+C:\Users\jsobczuk\Desktop\excon2\ExeconWeather\ExeconWeather\ExeconWeather\obj\Debug\netstandard2.0\ref\ExeconWeather.dll
+C:\Users\jsobczuk\Desktop\excon2\ExeconWeather\ExeconWeather\ExeconWeather\obj\Debug\netstandard2.0\ExeconWeather.pdb
+C:\Users\jsobczuk\Desktop\excon2\ExeconWeather\ExeconWeather\ExeconWeather\obj\Debug\netstandard2.0\ExeconWeather.csproj.CoreCompileInputs.cache
+C:\Users\jsobczuk\Desktop\excon2\ExeconWeather\ExeconWeather\ExeconWeather\obj\Debug\netstandard2.0\XamlC.stamp

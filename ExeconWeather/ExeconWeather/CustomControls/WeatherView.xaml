@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ExeconWeather.CustomControls.WeatherView">
+  <ContentView.Content>
+        <StackLayout VerticalOptions="Fill">
+            <Label Text="{Binding WeatherData.EmptyMessage}"
+                   FontSize="Medium"
+                   FontFamily="Droid Sans"
+                   FontAttributes="Bold"
+                   TextColor="#FD5602"
+                   IsVisible="{Binding WeatherData.IsEmpty}"
+                   HorizontalOptions="Center"/>
+            <StackLayout HorizontalOptions="CenterAndExpand"
+                   Orientation="Vertical"
+                   IsVisible="{Binding WeatherData.IsNotEmpty}">
+            <StackLayout HorizontalOptions="Fill">
+                <Image Source="{Binding WeatherData.IconPath}"
+                       Scale="4" />
+            </StackLayout>
+            <StackLayout Margin="0,40,0,0"
+                         HorizontalOptions="Fill"
+                         Orientation="Horizontal">
+                <Label Text="Description:"
+                       FontSize="Medium"
+                       FontFamily="Droid Sans"
+                       FontAttributes="Bold"
+                       TextColor="#FD5602"/>
+                <Label Text="{Binding WeatherData.WeatherSingle.Description}"
+                       FontSize="Medium"
+                       FontFamily="Droid Sans"
+                       FontAttributes="Italic"
+                       TextColor="#FD5602"/>
+            </StackLayout>
+            <StackLayout Margin="0,7,0,0"
+                         HorizontalOptions="Fill"
+                         Orientation="Horizontal">
+                <Label Text="Temperature:"
+                       FontSize="Medium"
+                       FontFamily="Droid Sans"
+                       FontAttributes="Bold"
+                       TextColor="#FD5602"/>
+                <Label Text="{Binding WeatherData.Main.Temp, StringFormat='{0} K'}"
+                       FontSize="Medium"
+                       FontFamily="Droid Sans"
+                       FontAttributes="Italic"
+                       TextColor="#FD5602"/>
+            </StackLayout>
+            <StackLayout Margin="0,7,0,0"
+                         HorizontalOptions="Fill"
+                         Orientation="Horizontal">
+                <Label Text="Atmospheric pressure:"
+                       FontSize="Medium"
+                       FontFamily="Droid Sans"
+                       FontAttributes="Bold"
+                       TextColor="#FD5602"/>
+                <Label Text="{Binding WeatherData.Main.Pressure, StringFormat='{0} hPa'}"
+                       FontSize="Medium"
+                       FontFamily="Droid Sans"
+                       FontAttributes="Italic"
+                       TextColor="#FD5602"/>
+            </StackLayout>
+            <StackLayout Margin="0,7,0,0"
+                         HorizontalOptions="Fill"
+                         Orientation="Horizontal">
+                <Label Text="Humidity:"
+                       FontSize="Medium"
+                       FontFamily="Droid Sans"
+                       FontAttributes="Bold"
+                       TextColor="#FD5602"/>
+                <Label Text="{Binding WeatherData.Main.Humidity, StringFormat='{0}%'}"
+                       FontSize="Medium"
+                       FontFamily="Droid Sans"
+                       FontAttributes="Italic"
+                       TextColor="#FD5602"/>
+            </StackLayout>
+            <StackLayout Margin="0,7,0,0"
+                         HorizontalOptions="Fill"
+                         Orientation="Horizontal">
+                <Label Text="Wind speed:"
+                       FontSize="Medium"
+                       FontFamily="Droid Sans"
+                       FontAttributes="Bold"
+                       TextColor="#FD5602"/>
+                <Label Text="{Binding WeatherData.Wind.Speed, StringFormat='{0} KT'}"
+                       FontSize="Medium"
+                       FontFamily="Droid Sans"
+                       FontAttributes="Italic"
+                       TextColor="#FD5602"/>
+            </StackLayout>
+            <StackLayout Margin="0,7,0,0"
+                         HorizontalOptions="Fill"
+                         Orientation="Horizontal">
+                <Label Text="Latitude:"
+                       FontSize="Medium"
+                       FontFamily="Droid Sans"
+                       FontAttributes="Bold"
+                       TextColor="#FD5602"/>
+                <Label Text="{Binding WeatherData.Coord.Lat}"
+                       FontSize="Medium"
+                       FontFamily="Droid Sans"
+                       FontAttributes="Italic"
+                       TextColor="#FD5602"/>
+            </StackLayout>
+            <StackLayout Margin="0,7,0,0"
+                         HorizontalOptions="Fill"
+                         Orientation="Horizontal">
+                <Label Text="Longitude:"
+                       FontSize="Medium"
+                       FontFamily="Droid Sans"
+                       FontAttributes="Bold"
+                       TextColor="#FD5602"/>
+                <Label Text="{Binding WeatherData.Coord.Lon}"
+                       FontSize="Medium"
+                       FontFamily="Droid Sans"
+                       FontAttributes="Italic"
+                       TextColor="#FD5602"/>
+            </StackLayout>
+        </StackLayout>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

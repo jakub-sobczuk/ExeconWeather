@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:local="clr-namespace:ExeconWeather"
+             xmlns:vm="clr-namespace:ExeconWeather.ViewModels"
+             xmlns:custom_controls="clr-namespace:ExeconWeather.CustomControls"
+             xmlns:extensions="clr-namespace:ExeconWeather.Utils.Extensions"
+             x:Class="ExeconWeather.Views.ItemsPage"
+             Title="{Binding Title}"
+             x:Name="BrowseItemsPage"
+             BackgroundColor="#fed8b1">
+
+    <ContentPage.BindingContext>
+        <vm:LocationViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Fill"
+                     VerticalOptions="Fill"
+                     Orientation="Vertical"
+                     Margin="20,30,20,0">
+            <StackLayout HorizontalOptions="Fill">
+                <Image Source="{extensions:ImageResource ExeconWeather.Resources.pin.png}" 
+                       IsVisible="{Binding LocationEnabled}"
+                       WidthRequest="25"
+                       HeightRequest="25"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"/>
+                <ImageButton Source="{extensions:ImageResource ExeconWeather.Resources.refresh2.png}"
+                             Command="{Binding RefreshCommand}"
+                             HorizontalOptions="End"
+                             VerticalOptions="Center"
+                             WidthRequest="40"
+                             HeightRequest="40"
+                             BackgroundColor="Transparent"/>
+            </StackLayout>
+            <StackLayout HorizontalOptions="Fill"
+                         Margin="0,15,0,0">
+                <custom_controls:WeatherView WeatherData="{Binding WeatherData}" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
